@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator - Cyber Security Department</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="mainPage" class="container">
+        <h1>Department of Cyber Security</h1>
+        <div class="form-group">
+            <label for="semesters">Enter number of semester exams completed:</label>
+            <input type="number" id="semesters" min="1" max="8" placeholder="1-8"><br>
+        </div>
+
+        <div id="semesters-container"></div>
+
+        <div class="button-group">
+            <button onclick="goToResultPage()">Calculate CGPA</button>
+        </div>
+    </div>
+
+    <!-- Result Page -->
+    <div id="resultPage" class="container" style="display: none;">
+        <h2>CGPA Result</h2>
+        <h3 id="result"></h3>
+        <button onclick="goBack()">Go Back</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
